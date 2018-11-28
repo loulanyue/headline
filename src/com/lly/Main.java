@@ -38,17 +38,17 @@ public class Main {
             print(3, "C");
         }
 
-//        String grade = "B";
-//        switch (grade) {
-//            case "A":
-//                print(4, "score > 80");
-//                break;
-//            case "B":
-//                print(5, "(60, 80)");
-//                break;
-//            default:
-//                print(6, "0,60");
-//        }
+        String grade = "B";
+        switch (grade) {
+            case "A":
+                print(4, "score > 80");
+                break;
+            case "B":
+                print(5, "(60, 80)");
+                break;
+            default:
+                print(6, "0,60");
+        }
 
         for (int i = 0; i < 6; ++i) {
             if (i == 1) {
@@ -124,13 +124,13 @@ public class Main {
 
         Collections.sort(strList);
         print(6, strList);
-//        Collections.sort(strList, new Comparator<String>() {
-//            @Override
-//            public int compare(String o1, String o2) {
-//                return o2.compareTo(o1);
-//            }
-//        });
-//        print(7, strList);
+        Collections.sort(strList, new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return o2.compareTo(o1);
+            }
+        });
+        print(7, strList);
 
         Collections.reverse(strList);
         print(8, strList);
@@ -160,20 +160,20 @@ public class Main {
         print(7, strSet.size());
     }
     public static void demoKeyValue(){
-//        Map<String, String> map = new HashMap<>();
-//        for (int i = 0; i < 4; ++i) {
-//            map.put(String.valueOf(i), String.valueOf(i * i));
-//        }
-//        print(1, map);
-//        for (Map.Entry<String, String> entry : map.entrySet()) {
-//            print(2, entry.getKey() + ":" + entry.getValue());
-//        }
-//        print(3, map.keySet());
-//        print(4, map.values());
-//        print(5, map.containsKey("2"));
-//        print(6, map.get("1"));
-//        map.replace("1", "A");
-//        print(7, map);
+        Map<String, String> map = new HashMap<>();
+        for (int i = 0; i < 4; ++i) {
+            map.put(String.valueOf(i), String.valueOf(i * i));
+        }
+        print(1, map);
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            print(2, entry.getKey() + ":" + entry.getValue());
+        }
+        print(3, map.keySet());
+        print(4, map.values());
+        print(5, map.containsKey("2"));
+        print(6, map.get("1"));
+        map.replace("1", "A");
+        print(7, map);
     }
     public static void demoException(){
         try {
@@ -232,14 +232,14 @@ public class Main {
         animal.say();
     }
     public static void main(String[] args) {
-//        demoOperation();
-//        demoControlFlow();
-//        demoString();
-//        demoList();
-//        demoSet();
-//        demoKeyValue();
-//        demoException();
-//        demoCommon();
+        demoOperation();
+        demoControlFlow();
+        demoString();
+        demoList();
+        demoSet();
+        demoKeyValue();
+        demoException();
+        demoCommon();
         demoClass();
     }
 
