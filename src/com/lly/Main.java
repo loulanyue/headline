@@ -192,6 +192,7 @@ public class Main {
             // 做清理工作
         }
     }
+    
     public static void demoCommon(){
         // salt uuid
         Random random = new Random();
@@ -232,7 +233,7 @@ public class Main {
         animal.say();
     }
     public static void main(String[] args) {
-        demoOperation();
+        //demoOperation();
         demoControlFlow();
         demoString();
         demoList();
